@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def print_table_row(data, maxlengths, padding, alignment):
 	print("|".join(['{0:{align}{len}}'.format(data[i], len=maxlengths[i]+padding, align=alignment[i]) for i in range(len(data))]))
 
